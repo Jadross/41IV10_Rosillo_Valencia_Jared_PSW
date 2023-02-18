@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.Curriculum_PSW{
+    text-align: left;
+    color: azure;
+}
+
+article{
+    text-align: center;
+    color: rgb(134, 112, 214);
+    margin: 0;
+}
