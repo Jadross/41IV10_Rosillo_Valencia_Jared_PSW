@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/examenstyle.css" />
+    <title>PRIMER</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header>
+        <h1>Intereseseses de intereses compuestos</h1>
+        <nav>
+          <h2>
+            Interes pa invertir
+          </h2>
+        </nav>
+      </header>
+      <form method="get" name="input">
+        <label>PRESTAMO DE: </label>
+        <input
+          type="text"
+          id="capital"
+          placeholder="Coloque el capital total a generar"
+          onkeypress="return inputN(event)"
+        />
+        <br />
+        <label>Con un % de: 96% anual por:</label><br />
+        <select name="años" id="years">
+          <option value="1" selected>1 AÑITO</option>
+          <option value="2">2 AÑITOS</option>
+          <option value="3">3 AÑITOS</option>
+          <option value="4">4 AÑITOS</option>
+          <option value="5">5 AÑITOS</option>
+        </select>
+        <br />
+        <br />
+        <input type="button" value="Calcular interes" onclick="return examenF()" />
+        <input type="button" value="Borrar datos" onclick="return limpiar()" />
+        <br />
+        <br />
+        <div class="amortization-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Numero de pago</th>
+                <th>Inversiones</th>
+                <th>Intereses totales</th>
+                <th>Capital de abono o aportado</th>
+                <th>Cuota total</th>
+                <th>Saldo recibido final</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+              <tr>
+                <td><pre id="noPago"></pre></td>
+                <td><pre id="prestamo"></pre></td>
+                <td><pre id="interes"></pre></td>
+                <td><pre id="pago"></pre></td>
+                <td><pre id="cuota"></pre></td>
+                <td><pre id="restante"></pre></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>TotalIDAD</td>
+                <td><pre id="totalIntereses"></pre></td>
+                <td><pre id="totalPago"></pre></td>
+                <td><pre id="totalCuota"></pre></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br />
+      </form>
+    </div>
+
+    <div class="back-container">
+      <footer><a href="../index.html">Main Page</a></footer>
+    </div>
+
+    <script src="./JS/examenFunction.js"></script>
+  </body>
+</html>
